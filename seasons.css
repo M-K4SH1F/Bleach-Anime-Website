@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.Hero {
+    background: url('https://images5.alphacoders.com/131/1319289.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+#logo img {
+    display: flex;
+    position: relative;
+    max-width: 150px;
+    height: auto;
+    padding: 40px 0 30px;
+    padding-top: 100px;
+    cursor: pointer;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to fill the space */
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Adjust margin as needed for alignment */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    color: whitesmoke;
+    border-bottom: 3px solid transparent;
+    transition: all .3s;
+}
+
+
+nav ul li:not(.btn) a:hover,
+nav ul li:not(.btn) a:focus {
+    border-bottom: 3px solid #f5dca8;
+}
+
+nav ul li.active a {
+    border-bottom: 3px solid #f5dca8;
+}
+
+nav ul li.btn a, .content .main-text a {
+    background-color: #333333;
+    color: white;
+    border: 2px solid #DAA520;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: all .3s;
+}
+
+nav ul li.btn a:hover, .content .main-text a:hover {
+    background: #f5dca8;
+    color: black;
+}
+
+
+/* Content styling */
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for content readability */
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: -30px; /* To overlap the header section */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Main text styles */
+.main-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.main-text h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.main-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .main-width {
+        padding: 10px;
+    }
+
+    .content {
+        margin-top: 0;
+        padding: 20px;
+    }
+}
