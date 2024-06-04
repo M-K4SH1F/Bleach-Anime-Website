@@ -49,3 +49,7 @@ To run the website locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/M-K4SH1F/bleach-anime-website.git
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd bleach-anime-website
+3. Open `index.html` in your browser to view the website.
